@@ -26,7 +26,7 @@ public class App {
 
         server.createContext("/", exchange ->
                 respond(exchange, 200,
-                        "{\"message\":\"CI/CD Project 4 deployed to EKS\",\"status\":\"ok\"}"));
+                        "{\"message\":\"CI/CD Project 4 deployed to EKS - A new version\",\"status\":\"ok\"}"));
 
         server.createContext("/health", exchange ->
                 respond(exchange, 200, "{\"status\":\"healthy\"}"));
